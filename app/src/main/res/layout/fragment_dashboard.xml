@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DashboardFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:outlineSpotShadowColor="@color/black"
+        android:id="@+id/cardView"
+        android:layout_marginHorizontal="5dp"
+        tools:ignore="MissingConstraints"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/card_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dname"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/demail"
+                android:text="Email"
+                android:textColor="@color/text"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
